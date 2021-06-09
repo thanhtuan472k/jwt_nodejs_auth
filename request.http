@@ -1,0 +1,23 @@
+GET http://localhost:4000/posts
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJ0aGFuaHR1YW4iLCJpYXQiOjE2MjMxNzYzNjQsImV4cCI6MTYyMzE3NjY2NH0.ifLUUSO4_ilMRnTKZ1eBAt3mFIMdbTp2UdtpMOkp4Hc
+
+###
+POST http://localhost:5000/login
+Content-Type: application/json
+
+{
+    "username": "nhidepgai"
+}
+
+###
+
+POST http://localhost:5000/token
+Content-Type: application/json
+
+{
+    "refreshToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MiwidXNlcm5hbWUiOiJuaGlkZXBnYWkiLCJpYXQiOjE2MjMxNzUyODEsImV4cCI6MTYyMzE3ODg4MX0._pkiz5OzfR86fBcN_1UP-_6ydKIJ6UTu69ZYL8pS248"
+}
+
+###
+DELETE http://localhost:5000/logout
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJ0aGFuaHR1YW4iLCJpYXQiOjE2MjMxNzU4MDEsImV4cCI6MTYyMzE3NTgxNn0.BptxtI1GlUgtEEICQ9Ej4DEC7uOM57nsQJlNLDzkwME
